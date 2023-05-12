@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Lipika APP </title>
+</head>
+
+<body style="font-family: 'Poppins';">
+
+    <nav>
+        <section class="bg-white">
+            <nav class="flex justify-between p-6 px-4 max-w-7xl mx-auto">
+                <a href="#">
+                    <h1> Lipika APP</h1>
+                </a>
+                <div class="hidden xl:flex items-center">
+                    <ul class="flex mr-12">
+                        <li class="mr-12"><a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Product</a>
+                        </li>
+                        <li class="mr-12"><a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Features</a>
+                        </li>
+                        <li class="mr-12"><a class="text-gray-500 hover:text-gray-900 font-medium"
+                                href="#">Resources</a></li>
+                        <li><a class="text-gray-500 hover:text-gray-900 font-medium" href="#">Pricing</a></li>
+                    </ul>
+                    <a class="inline-block py-2 px-4 text-sm leading-5 text-white bg-gray-500 font-medium rounded-md"
+                        href="#">Contact Us</a>
+                </div>
+                <button class="navbar-burger self-center xl:hidden">
+                    <svg width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="text-gray-50" width="32" height="32" rx="6" fill="currentColor"></rect>
+                        <path class="text-gray-500"
+                            d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+            </nav>
+            <div class="navbar-menu hidden fixed top-0 left-0 z-50 w-full h-full bg-gray-900 bg-opacity-50">
+                <div class="fixed top-0 left-0 bottom-0 w-full w-4/6 max-w-xs bg-white">
+                    <nav class="relative p-6 h-full overflow-y-auto">
+                        <div class="flex flex-col justify-between h-full">
+                            <div>
+                                <a class="inline-block mb-6" href="#">
+                                    <img class="h-8" src="flex-ui-assets/logos/flex-ui-blue-light.svg" alt="">
+                                </a>
+                                <ul class="mb-6">
+                                    <li><a class="block py-3 px-4 text-gray-500 hover:text-gray-900 font-medium hover:bg-gray-50 rounded-md"
+                                            href="#">Product</a></li>
+                                    <li><a class="block py-3 px-4 text-gray-500 hover:text-gray-900 font-medium hover:bg-gray-50 rounded-md"
+                                            href="#">Features</a></li>
+                                    <li><a class="block py-3 px-4 text-gray-500 hover:text-gray-900 font-medium hover:bg-gray-50 rounded-md"
+                                            href="#">Pricing</a></li>
+                                    <li><a class="block py-3 px-4 text-gray-500 hover:text-gray-900 font-medium hover:bg-gray-50 rounded-md"
+                                            href="#">Resources</a></li>
+                                </ul>
+                            </div>
+                            <a class="inline-block py-2 px-4 w-full text-sm leading-5 text-blue-50 bg-gray-500 hover:bg-gray-600 font-medium text-center focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 rounded-md"
+                                href="#">Contact Us</a>
+                        </div>
+                    </nav>
+                    <a class="navbar-close absolute top-5 p-4 right-3" href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.94004 6L11.14 1.80667C11.2656 1.68113 11.3361 1.51087 11.3361 1.33333C11.3361 1.1558 11.2656 0.985537 11.14 0.860002C11.0145 0.734466 10.8442 0.66394 10.6667 0.66394C10.4892 0.66394 10.3189 0.734466 10.1934 0.860002L6.00004 5.06L1.80671 0.860002C1.68117 0.734466 1.51091 0.663941 1.33337 0.663941C1.15584 0.663941 0.985576 0.734466 0.860041 0.860002C0.734505 0.985537 0.66398 1.1558 0.66398 1.33333C0.66398 1.51087 0.734505 1.68113 0.860041 1.80667L5.06004 6L0.860041 10.1933C0.797555 10.2553 0.747959 10.329 0.714113 10.4103C0.680267 10.4915 0.662842 10.5787 0.662842 10.6667C0.662842 10.7547 0.680267 10.8418 0.714113 10.9231C0.747959 11.0043 0.797555 11.078 0.860041 11.14C0.922016 11.2025 0.99575 11.2521 1.07699 11.2859C1.15823 11.3198 1.24537 11.3372 1.33337 11.3372C1.42138 11.3372 1.50852 11.3198 1.58976 11.2859C1.671 11.2521 1.74473 11.2025 1.80671 11.14L6.00004 6.94L10.1934 11.14C10.2554 11.2025 10.3291 11.2521 10.4103 11.2859C10.4916 11.3198 10.5787 11.3372 10.6667 11.3372C10.7547 11.3372 10.8419 11.3198 10.9231 11.2859C11.0043 11.2521 11.0781 11.2025 11.14 11.14C11.2025 11.078 11.2521 11.0043 11.286 10.9231C11.3198 10.8418 11.3372 10.7547 11.3372 10.6667C11.3372 10.5787 11.3198 10.4915 11.286 10.4103C11.2521 10.329 11.2025 10.2553 11.14 10.1933L6.94004 6Z"
+                                fill="#556987"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <section>
+        <section class="relative bg-blue-50 overflow-hidden">
+            <div class="relative pt-16 md:pt-24 pb-20 md:pb-28 ">
+                <div class="container px-4 max-w-7xl mx-auto">
+                    <div class="relative z-10 flex flex-wrap -mx-4 items-center">
+                        <div class="w-full md:w-1/2 px-4 mb-12 md:mb-0">
+                            <span
+                                class="inline-block py-px px-2 mb-4 text-xs leading-5 text-white bg-blue-500 uppercase rounded">
+                                Accounting Software </span>
+                            <h1 class="mb-6 text-3xl md:text-5xl lg:text-5xl leading-12 font-bold ">
+                                We Help Businesses Get Paid Faster And Make Accounting Easier
+                            </h1>
+                            <p class="mb-8 text-lg md:text-lg text-gray-400">
+                                The easiest web-based accounting management smart solution, designed to handle
+                                accounting activities for Nepali Businesses.
+                            </p>
+                            <div class="flex flex-wrap mb-4">
+                                <div class="w-full md:w-auto py-1 md:py-0 md:mr-4"><a
+                                        class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-blue-50 font-medium text-center bg-blue-500 hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-md shadow-sm"
+                                        href="#">Request a Demo</a></div>
+                                <div class="w-full md:w-auto py-1 md:py-0 shadow"><a
+                                        class="inline-block py-5 px-7 w-full text-base md:text-lg leading-4 text-gray-800 font-medium text-center bg-white hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50 rounded-md shadow-sm"
+                                        href="#">Start a Free Trial</a></div>
+                            </div>
+                        </div>
+                        <div class="flex-1 ml-20">
+                            <style>
+                                .img-animate {
+                                    animation: mymove 8s ease-in-out infinite;
+                                }
+
+                                @keyframes mymove {
+                                    0% {
+                                        transform: 0px;
+                                    }
+
+                                    25% {
+                                        transform: 10px;
+                                    }
+
+                                    50% {
+                                        transform: 0px;
+                                    }
+
+                                    75% {
+                                        transform: 10px;
+                                    }
+
+                                    100% {
+                                        transform: 0px;
+                                    }
+
+                                    /* 0% {
+                                        top: 0px;
+                                    }
+
+                                    50% {
+                                        top: 30px;
+                                    }
+
+                                    100% {
+                                        top: 0px;
+                                    } */
+                                }
+                            </style>
+                            <img class="img-animate relative z-10 w-full" src="lady.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div
+                    class="md:absolute md:-right-80 md:top-1/2 md:transform md:-translate-y-1/2 md:translate-x-64 lg:translate-x-32 xl:-translate-x-7 md:mt-12 hidden md:block">
+                    <img class="relative z-10" src="lady.png" alt="">
+                </div> -->
+
+            </div>
+        </section>
+    </section>
+
+
+    <section class="py-24 bg-gray-50"
+        style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="max-w-7xl px-4 mx-auto">
+            <div class="xl:max-w-4xl mb-12 mx-auto text-center">
+                <span
+                    class="inline-block py-px px-2 mb-4 text-xs leading-5 text-blue-500 bg-blue-100 font-medium uppercase rounded-full shadow-sm">Features</span>
+                <h2 class="mb-4 text-3xl md:text-4xl font-bold">
+                    Our Core Features
+                </h2>
+                <p class="mb-8 text-lg md:text-lg text-gray-400">
+                    Lipika captures the business flow, and anyone with the basic business concept can use the system
+                    with minimal training and enough to record business transactions correctly.
+                </p>
+            </div>
+            <div class="border shadow-lg max-w-5xl mx-auto relative mt-20">
+                <!-- <img src="dot-blue.svg" class="absolute -top-[40px] -left-[40px] z-[1] w-[1024px]"> -->
+
+                <!-- DOTS SVG  -->
+                <!-- <svg class="absolute -top-[60px] -left-[60px] z-[1]" width="350" height="350" fill="none"
+                    viewBox="0 0 404 384" aria-hidden="true">
+                    <defs>
+                        <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-indigo-500" fill="currentColor"></rect>
+                        </pattern>
+                    </defs>
+                    <rect width="500" height="500" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"></rect>
+                </svg> -->
+
+                <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-64 h-64 absolute -top-[80px] -left-[80px] z-[1]">
+                    <mask id="mask0_627_15282" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="129" height="129">
+                        <circle cx="64.5" cy="64.5" r="63.6103" fill="#C4C4C4" stroke="#F8BB54"
+                            stroke-width="1.77931" />
+                    </mask>
+                    <g mask="url(#mask0_627_15282)">
+                        <path
+                            d="M-37.4844 27.0501C-37.4844 27.0501 -7.44941 21.4863 0.299994 2.01352C7.71125 -16.6533 38.2404 -21.6709 38.2404 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 36.4093C-37.4844 36.4093 -0.636166 29.9878 8.85543 6.48526C17.905 -15.9514 55.3252 -21.6709 55.3252 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 45.7948C-37.4844 45.7948 6.15098 38.4893 17.3849 11.009C28.0987 -15.2753 72.4102 -21.6709 72.4102 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 55.1542C-37.4844 55.1542 12.9641 46.9908 25.9403 15.4808C38.2924 -14.5733 89.4951 -21.6709 89.4951 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 64.5136C-37.4844 64.5136 19.7773 55.4923 34.4958 19.9784C48.486 -13.8714 106.554 -21.6709 106.554 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 73.899C-37.4844 73.899 26.5644 64.0196 43.0252 24.476C58.7058 -13.1955 123.639 -21.6709 123.639 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 83.2584C-37.4844 83.2584 33.3776 72.495 51.5807 28.9739C68.8996 -12.4935 140.724 -21.6709 140.724 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 92.6178C-37.4844 92.6178 40.1908 80.9965 60.11 33.4456C79.0932 -11.7916 157.809 -21.6709 157.809 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 102.003C-37.4844 102.003 46.9778 89.5241 68.6655 37.9692C89.2871 -11.1157 174.868 -21.6709 174.868 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 111.362C-37.4844 111.362 53.7911 98.0256 77.195 42.467C99.4807 -10.4137 191.952 -21.6709 191.952 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 120.747C-37.4844 120.747 60.6041 106.527 85.7505 46.9647C109.674 -9.71177 209.037 -21.6709 209.037 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 130.108C-37.4844 130.108 67.3913 115.029 94.2799 51.4625C119.868 -9.0357 226.122 -21.6709 226.122 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 139.466C-37.4844 139.466 74.2044 123.53 102.835 55.9341C130.062 -8.33373 243.206 -21.6709 243.206 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 148.851C-37.4844 148.851 81.0177 132.032 111.391 60.4578C140.256 -7.63176 260.266 -21.6709 260.266 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 158.212C-37.4844 158.212 87.8047 140.533 119.92 64.9296C150.449 -6.95589 277.351 -21.6709 277.351 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 167.572C-37.4844 167.572 94.618 149.034 128.476 69.4272C160.643 -6.25392 294.436 -21.6709 294.436 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 176.957C-37.4844 176.957 101.431 157.561 137.005 73.9251C170.837 -5.55195 311.52 -21.6709 311.52 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                            d="M-37.4844 186.316C-37.4844 186.316 108.218 166.037 145.56 78.4227C181.031 -4.87609 328.58 -21.6709 328.58 -21.6709"
+                            stroke="#3b82f6" stroke-width="2" stroke-miterlimit="10" />
+                    </g>
+                </svg>
+
+
+
+                <img src="dash.png" class="w-full h-full object-contain relative z-[2]" alt="">
+
+                <!-- DOTS SVG  -->
+
+                <svg class="absolute -bottom-[60px] -right-[60px] z-[1]" width="350" height="350" fill="none"
+                    viewBox="0 0 404 384" aria-hidden="true">
+                    <defs>
+                        <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20"
+                            patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-indigo-500" fill="currentColor"></rect>
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"></rect>
+                </svg>
+
+            </div>
+
+            <div class="grid grid-cols-2 gap-x-4 max-w-4xl mx-auto mt-12">
+                <div class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                    <div
+                        class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Easy To Use </h3>
+                    <p class="text-md text-gray-500">
+                        Lipika captures the business flow, and anyone with the basic business concept can use the
+                        system.
+                    </p>
+                </div>
+                <div class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                    <div
+                        class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.71 1.29C20.617 1.19627 20.5064 1.12188 20.3846 1.07111C20.2627 1.02034 20.132 0.994202 20 0.994202C19.868 0.994202 19.7373 1.02034 19.6154 1.07111C19.4936 1.12188 19.383 1.19627 19.29 1.29L13 7.59L8.71 3.29C8.61704 3.19627 8.50644 3.12188 8.38458 3.07111C8.26272 3.02034 8.13201 2.9942 8 2.9942C7.86799 2.9942 7.73728 3.02034 7.61542 3.07111C7.49356 3.12188 7.38296 3.19627 7.29 3.29L1.29 9.29C1.19627 9.38296 1.12188 9.49356 1.07111 9.61542C1.02034 9.73728 0.994202 9.86799 0.994202 10C0.994202 10.132 1.02034 10.2627 1.07111 10.3846C1.12188 10.5064 1.19627 10.617 1.29 10.71C1.38296 10.8037 1.49356 10.8781 1.61542 10.9289C1.73728 10.9797 1.86799 11.0058 2 11.0058C2.13201 11.0058 2.26272 10.9797 2.38458 10.9289C2.50644 10.8781 2.61704 10.8037 2.71 10.71L8 5.41L12.29 9.71C12.383 9.80373 12.4936 9.87812 12.6154 9.92889C12.7373 9.97966 12.868 10.0058 13 10.0058C13.132 10.0058 13.2627 9.97966 13.3846 9.92889C13.5064 9.87812 13.617 9.80373 13.71 9.71L20.71 2.71C20.8037 2.61704 20.8781 2.50644 20.9289 2.38458C20.9797 2.26272 21.0058 2.13201 21.0058 2C21.0058 1.86799 20.9797 1.73728 20.9289 1.61542C20.8781 1.49356 20.8037 1.38296 20.71 1.29Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold">Easy to Understand </h3>
+                    <p class="text-md text-gray-500">
+                        Get detailed accounting reports in real-time and know about the health of your business.
+                    </p>
+                </div>
+                <div class="p-8 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                    <div
+                        class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 18H9.24C9.37161 18.0008 9.50207 17.9755 9.62391 17.9258C9.74574 17.876 9.85656 17.8027 9.95 17.71L16.87 10.78L19.71 8C19.8037 7.90704 19.8781 7.79644 19.9289 7.67458C19.9797 7.55272 20.0058 7.42201 20.0058 7.29C20.0058 7.15799 19.9797 7.02728 19.9289 6.90542C19.8781 6.78356 19.8037 6.67296 19.71 6.58L15.47 2.29C15.377 2.19627 15.2664 2.12188 15.1446 2.07111C15.0227 2.02034 14.892 1.9942 14.76 1.9942C14.628 1.9942 14.4973 2.02034 14.3754 2.07111C14.2536 2.12188 14.143 2.19627 14.05 2.29L11.23 5.12L4.29 12.05C4.19732 12.1434 4.12399 12.2543 4.07423 12.3761C4.02446 12.4979 3.99924 12.6284 4 12.76V17C4 17.2652 4.10536 17.5196 4.29289 17.7071C4.48043 17.8946 4.73478 18 5 18ZM14.76 4.41L17.59 7.24L16.17 8.66L13.34 5.83L14.76 4.41ZM6 13.17L11.93 7.24L14.76 10.07L8.83 16H6V13.17ZM21 20H3C2.73478 20 2.48043 20.1054 2.29289 20.2929C2.10536 20.4804 2 20.7348 2 21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21C22 20.7348 21.8946 20.4804 21.7071 20.2929C21.5196 20.1054 21.2652 20 21 20Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Access Anywhere</h3>
+                    <p class="text-md text-gray-500">
+                        Compared to desktop applications, web-based applications provide a whole range of business
+                        advantages.
+                    </p>
+                </div>
+                <div class="p-8 text-center hover:bg-white rounded-md hover:shadow-lg transition duration-200">
+                    <div
+                        class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 13H3C2.73478 13 2.48043 13.1054 2.29289 13.2929C2.10536 13.4804 2 13.7348 2 14V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H10C10.2652 22 10.5196 21.8946 10.7071 21.7071C10.8946 21.5196 11 21.2652 11 21V14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13ZM9 20H4V15H9V20ZM21 2H14C13.7348 2 13.4804 2.10536 13.2929 2.29289C13.1054 2.48043 13 2.73478 13 3V10C13 10.2652 13.1054 10.5196 13.2929 10.7071C13.4804 10.8946 13.7348 11 14 11H21C21.2652 11 21.5196 10.8946 21.7071 10.7071C21.8946 10.5196 22 10.2652 22 10V3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2V2ZM20 9H15V4H20V9ZM21 13H14C13.7348 13 13.4804 13.1054 13.2929 13.2929C13.1054 13.4804 13 13.7348 13 14V21C13 21.2652 13.1054 21.5196 13.2929 21.7071C13.4804 21.8946 13.7348 22 14 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21V14C22 13.7348 21.8946 13.4804 21.7071 13.2929C21.5196 13.1054 21.2652 13 21 13ZM20 20H15V15H20V20ZM10 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V10C2 10.2652 2.10536 10.5196 2.29289 10.7071C2.48043 10.8946 2.73478 11 3 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V3C11 2.73478 10.8946 2.48043 10.7071 2.29289C10.5196 2.10536 10.2652 2 10 2V2ZM9 9H4V4H9V9Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Minimum Charge </h3>
+                    <p class="text-md text-gray-500">
+                        Popular software providers charge high installation costs whereas Lipika
+                        installation costs are reliable for small businesses with premium features.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="py-24 bg-white"
+        style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="max-w-7xl px-4 mx-auto">
+            <div class="xl:max-w-4xl mb-12 mx-auto text-center">
+                <span
+                    class="inline-block py-px px-2 mb-4 text-xs leading-5 text-blue-500 bg-blue-100 font-medium uppercase rounded-full shadow-sm">Features</span>
+                <h2 class="mb-4 text-3xl md:text-4xl font-bold">
+                    Our Core Features
+                </h2>
+                <p class="mb-8 text-lg md:text-lg text-gray-400">
+                    Lipika captures the business flow, and anyone with the basic business concept can use the system
+                    with minimal training and enough to record business transactions correctly.
+                </p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/3 px-4 lg:pt-6 mb-8 lg:mb-0">
+                    <div
+                        class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                        <div
+                            class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Easy To Use </h3>
+                        <p class="text-md text-gray-500">
+                            Lipika captures the business flow, and anyone with the basic business concept can use the
+                            system.
+                        </p>
+                    </div>
+                    <div class="p-8 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                        <div
+                            class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5 18H9.24C9.37161 18.0008 9.50207 17.9755 9.62391 17.9258C9.74574 17.876 9.85656 17.8027 9.95 17.71L16.87 10.78L19.71 8C19.8037 7.90704 19.8781 7.79644 19.9289 7.67458C19.9797 7.55272 20.0058 7.42201 20.0058 7.29C20.0058 7.15799 19.9797 7.02728 19.9289 6.90542C19.8781 6.78356 19.8037 6.67296 19.71 6.58L15.47 2.29C15.377 2.19627 15.2664 2.12188 15.1446 2.07111C15.0227 2.02034 14.892 1.9942 14.76 1.9942C14.628 1.9942 14.4973 2.02034 14.3754 2.07111C14.2536 2.12188 14.143 2.19627 14.05 2.29L11.23 5.12L4.29 12.05C4.19732 12.1434 4.12399 12.2543 4.07423 12.3761C4.02446 12.4979 3.99924 12.6284 4 12.76V17C4 17.2652 4.10536 17.5196 4.29289 17.7071C4.48043 17.8946 4.73478 18 5 18ZM14.76 4.41L17.59 7.24L16.17 8.66L13.34 5.83L14.76 4.41ZM6 13.17L11.93 7.24L14.76 10.07L8.83 16H6V13.17ZM21 20H3C2.73478 20 2.48043 20.1054 2.29289 20.2929C2.10536 20.4804 2 20.7348 2 21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21C22 20.7348 21.8946 20.4804 21.7071 20.2929C21.5196 20.1054 21.2652 20 21 20Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Access Anywhere</h3>
+                        <p class="text-md text-gray-500">
+                            Compared to desktop applications, web-based applications provide a whole range of business
+                            advantages.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
+                    <img class="mx-auto" src="stash.png" alt="">
+                </div>
+                <div class="w-full lg:w-1/3 lg:pt-6 px-4">
+                    <div
+                        class="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">
+                        <div
+                            class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.71 1.29C20.617 1.19627 20.5064 1.12188 20.3846 1.07111C20.2627 1.02034 20.132 0.994202 20 0.994202C19.868 0.994202 19.7373 1.02034 19.6154 1.07111C19.4936 1.12188 19.383 1.19627 19.29 1.29L13 7.59L8.71 3.29C8.61704 3.19627 8.50644 3.12188 8.38458 3.07111C8.26272 3.02034 8.13201 2.9942 8 2.9942C7.86799 2.9942 7.73728 3.02034 7.61542 3.07111C7.49356 3.12188 7.38296 3.19627 7.29 3.29L1.29 9.29C1.19627 9.38296 1.12188 9.49356 1.07111 9.61542C1.02034 9.73728 0.994202 9.86799 0.994202 10C0.994202 10.132 1.02034 10.2627 1.07111 10.3846C1.12188 10.5064 1.19627 10.617 1.29 10.71C1.38296 10.8037 1.49356 10.8781 1.61542 10.9289C1.73728 10.9797 1.86799 11.0058 2 11.0058C2.13201 11.0058 2.26272 10.9797 2.38458 10.9289C2.50644 10.8781 2.61704 10.8037 2.71 10.71L8 5.41L12.29 9.71C12.383 9.80373 12.4936 9.87812 12.6154 9.92889C12.7373 9.97966 12.868 10.0058 13 10.0058C13.132 10.0058 13.2627 9.97966 13.3846 9.92889C13.5064 9.87812 13.617 9.80373 13.71 9.71L20.71 2.71C20.8037 2.61704 20.8781 2.50644 20.9289 2.38458C20.9797 2.26272 21.0058 2.13201 21.0058 2C21.0058 1.86799 20.9797 1.73728 20.9289 1.61542C20.8781 1.49356 20.8037 1.38296 20.71 1.29Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold">Easy to Understand </h3>
+                        <p class="text-md text-gray-500">
+                            Get detailed accounting reports in real-time and know about the health of your business.
+                        </p>
+                    </div>
+                    <div class="p-8 text-center hover:bg-white rounded-md hover:shadow-lg transition duration-200">
+                        <div
+                            class="inline-flex h-16 w-16 mb-6 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 13H3C2.73478 13 2.48043 13.1054 2.29289 13.2929C2.10536 13.4804 2 13.7348 2 14V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H10C10.2652 22 10.5196 21.8946 10.7071 21.7071C10.8946 21.5196 11 21.2652 11 21V14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13ZM9 20H4V15H9V20ZM21 2H14C13.7348 2 13.4804 2.10536 13.2929 2.29289C13.1054 2.48043 13 2.73478 13 3V10C13 10.2652 13.1054 10.5196 13.2929 10.7071C13.4804 10.8946 13.7348 11 14 11H21C21.2652 11 21.5196 10.8946 21.7071 10.7071C21.8946 10.5196 22 10.2652 22 10V3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2V2ZM20 9H15V4H20V9ZM21 13H14C13.7348 13 13.4804 13.1054 13.2929 13.2929C13.1054 13.4804 13 13.7348 13 14V21C13 21.2652 13.1054 21.5196 13.2929 21.7071C13.4804 21.8946 13.7348 22 14 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21V14C22 13.7348 21.8946 13.4804 21.7071 13.2929C21.5196 13.1054 21.2652 13 21 13ZM20 20H15V15H20V20ZM10 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V10C2 10.2652 2.10536 10.5196 2.29289 10.7071C2.48043 10.8946 2.73478 11 3 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V3C11 2.73478 10.8946 2.48043 10.7071 2.29289C10.5196 2.10536 10.2652 2 10 2V2ZM9 9H4V4H9V9Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mb-4 text-xl md:text-2xl leading-tight font-bold"> Minimum Charge </h3>
+                        <p class="text-md text-gray-500">
+                            Popular software providers charge high installation costs whereas Lipika
+                            installation costs are reliable for small businesses with premium features.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap items-center -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+                    <div class="max-w-md">
+                        <span class="inline-block mb-8 text-xs text-blue-400 font-semibold">What's new at Lipika HR
+                        </span>
+                        <h2 class="mb-4 text-3xl lg:text-4xl text-white font-semibold font-heading">
+                            You can get your free trial from here
+                        </h2>
+                        <p class="text-md text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="md:max-w-md lg:ml-auto p-8 bg-white text-center rounded-xl">
+                        <form action="#">
+                            <h3 class="mb-6 text-2xl font-semibold font-heading"> Test our latest update </h3>
+                            <p class="mb-10 text-sm text-gray-500 leading-loose">Amet minim mollit non deserunt est
+                                dolor do amet sint. Velit officia consequat duis.</p>
+                            <div class="relative flex flex-wrap mb-6">
+                                <input
+                                    class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border border-gray-400 rounded"
+                                    type="password" placeholder="Your Name">
+                                <span
+                                    class="absolute top-0 left-0 ml-4 -mt-2 px-2 inline-block bg-white text-gray-500 text-xs">
+                                    Full Name </span>
+                            </div>
+                            <div class="relative flex flex-wrap mb-6">
+                                <input
+                                    class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border border-gray-400 rounded"
+                                    type="password" placeholder="+977-98.......">
+                                <span
+                                    class="absolute top-0 left-0 ml-4 -mt-2 px-2 inline-block bg-white text-gray-500 text-xs">
+                                    Mobile
+                                </span>
+                            </div>
+                            <div class="relative flex flex-wrap mb-6">
+                                <input
+                                    class="relative mb-2 md:mb-0 w-full py-4 pl-4 text-sm border border-gray-400 rounded"
+                                    type="password" placeholder="e.g lipka@lipika.com">
+                                <span
+                                    class="absolute top-0 left-0 ml-4 -mt-2 px-2 inline-block bg-white text-gray-500 text-xs">Email
+                                    Address</span>
+                            </div>
+                            <button
+                                class="w-full inline-block py-4 text-sm text-white font-medium leading-normal bg-blue-500 hover:bg-blue-600 rounded transition duration-200">Sign
+                                up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Software  -->
+
+    <section class="relative py-24 bg-white">
+        <div class="max-w-7xl px-4 mx-auto">
+            <div class="flex">
+                <div class="relative w-2/5">
+                    <img class="" src="stash.png" alt="">
+                </div>
+                <div class="md:flex-1 md:ml-auto pl-4">
+                    <div class="xl:max-w-4xl mb-12 mx-auto">
+                        <span
+                            class="inline-block py-px px-2 mb-4 text-xs leading-5 text-blue-500 bg-blue-100 font-medium uppercase rounded-full shadow-sm">Features</span>
+                        <h2 class="mb-4 text-3xl md:text-4xl font-bold">
+                            Our Other Features
+                        </h2>
+                        <p class="mb-8 text-lg md:text-lg text-gray-400">
+                            Lipika captures the business flow, and anyone with the basic business concept can use the
+                            system
+                            with minimal training and enough to record business transactions correctly.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">Servicing and
+                                Trading</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">
+                                Consultancy and NGO, INGOs
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">
+                                Super Market And Retail Store
+
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">
+                                Wholesale and distributors
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">
+                                Manufacturing company and organization
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap mb-2 text-center md:text-left">
+                        <div class="w-full md:w-auto mb-6 md:mb-0 md:pr-6">
+                            <div
+                                class="inline-flex h-12 w-12 mx-auto items-center justify-center text-white bg-blue-500 rounded-lg">
+                                <svg width="21" height="21" viewBox="0 0 24 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 18.63H5C4.20435 18.63 3.44129 18.3139 2.87868 17.7513C2.31607 17.1887 2 16.4257 2 15.63V7.63C2 7.36479 1.89464 7.11043 1.70711 6.9229C1.51957 6.73536 1.26522 6.63 1 6.63C0.734784 6.63 0.48043 6.73536 0.292893 6.9229C0.105357 7.11043 0 7.36479 0 7.63L0 15.63C0 16.9561 0.526784 18.2279 1.46447 19.1655C2.40215 20.1032 3.67392 20.63 5 20.63H17C17.2652 20.63 17.5196 20.5246 17.7071 20.3371C17.8946 20.1496 18 19.8952 18 19.63C18 19.3648 17.8946 19.1104 17.7071 18.9229C17.5196 18.7354 17.2652 18.63 17 18.63ZM21 0.630005H7C6.20435 0.630005 5.44129 0.946075 4.87868 1.50868C4.31607 2.07129 4 2.83436 4 3.63V13.63C4 14.4257 4.31607 15.1887 4.87868 15.7513C5.44129 16.3139 6.20435 16.63 7 16.63H21C21.7956 16.63 22.5587 16.3139 23.1213 15.7513C23.6839 15.1887 24 14.4257 24 13.63V3.63C24 2.83436 23.6839 2.07129 23.1213 1.50868C22.5587 0.946075 21.7956 0.630005 21 0.630005ZM20.59 2.63L14.71 8.51C14.617 8.60373 14.5064 8.67813 14.3846 8.7289C14.2627 8.77966 14.132 8.8058 14 8.8058C13.868 8.8058 13.7373 8.77966 13.6154 8.7289C13.4936 8.67813 13.383 8.60373 13.29 8.51L7.41 2.63H20.59ZM22 13.63C22 13.8952 21.8946 14.1496 21.7071 14.3371C21.5196 14.5246 21.2652 14.63 21 14.63H7C6.73478 14.63 6.48043 14.5246 6.29289 14.3371C6.10536 14.1496 6 13.8952 6 13.63V4L11.88 9.88C12.4425 10.4418 13.205 10.7574 14 10.7574C14.795 10.7574 15.5575 10.4418 16.12 9.88L22 4V13.63Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:flex-1 md:pt-3">
+                            <h3 class="mb-4 text-lg leading-tight text-gray-900 font-medium">
+                                Jewellery, shoes, clothes shop and more
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ  -->
+
+    <section class="pt-24 bg-blue-50"
+        style="background-image: url('flex-ui-assets/elements/pattern-white.svg'); background-position: center;">
+        <div class="max-w-7xl px-4 mx-auto">
+            <div class="xl:max-w-4xl mb-16 mx-auto text-center">
+                <span
+                    class="inline-block py-px px-2 mb-4 text-xs leading-5 text-blue-500 bg-blue-100 font-medium uppercase rounded-full shadow-sm">Features</span>
+                <h2 class="mb-4 text-3xl md:text-4xl font-bold">
+                    Frequently Asked Questions
+                </h2>
+                <p class="mb-8 text-lg md:text-lg text-gray-400">
+                    Lipika captures the business flow, and anyone with the basic business concept can use the system
+                    with minimal training and enough to record business transactions correctly.
+                </p>
+            </div>
+            <div class="flex flex-wrap pb-16 -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="">
+                        <div class="inline-flex mb-6 items-center justify-center w-12 h-12 rounded-full bg-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="text-white" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-gray-900">What is online accounting software? </h3>
+                        <p class="text-gray-500">
+                            Online accounting software is sometimes called 'cloud-based software'. It allows users to
+                            create, store and send invoices from any device. You don't need anything saved on your
+                            computer, and there are no disks to load. Simply log in on a web browser and jump right into
+                            your Lipika online account. Your personal data and settings are right there, stored safely
+                            in 'the cloud'.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="">
+                        <div class="inline-flex mb-6 items-center justify-center w-12 h-12 rounded-full bg-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="text-white" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+                            </svg>
+                        </div>
+                        <h3 class="mb-3 text-xl font-bold text-gray-900">What is online accounting software? </h3>
+                        <p class="text-gray-500">
+                            Online accounting software is sometimes called 'cloud-based software'. It allows users to
+                            create, store and send invoices from any device. You don't need anything saved on your
+                            computer, and there are no disks to load. Simply log in on a web browser and jump right into
+                            your Lipika online account. Your personal data and settings are right there, stored safely
+                            in 'the cloud'.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
